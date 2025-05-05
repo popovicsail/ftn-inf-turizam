@@ -11,14 +11,71 @@
         <h1 class="title">TourApp</h1>
         <ul class="nav-links">
             <li><a href="contact/contact.html">Kontakt</a></li>
-            <li><a href="#">Ture</a></li>
-            <li><a href="#">Restorani</a></li>
+            <li><a href="#" id="tureBtn">Ture</a></li>
+            <li><a href="#" id="restoranBtn">Restorani</a></li>
         </ul>
     </nav>
 
+    <div class="tureAllDiv">
+        <div class="tureTableDiv">
+            <table>
+                <thead>
+                    <tr>
+                        <th id="tureTableNaziv">Naziv</th>
+                        <th id="tureTableOpis">Opis</th>
+                    </tr>
+                </thead>
+                <tbody id="tureTbody">
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="tureFormaDiv">
+            <form class="tureForma">
+                <div class="tureFormaInputRow">
+                    <label for="naziv">Naziv: </label>
+                    <input type="text" id="naziv" name="naziv" required> 
+                    <br>
+                </div>
+
+                <div class="tureFormaInputRow">
+                    <label for="opis">Opis: </label>
+                    <input type="text" id="opis" name="opis" required>
+                    <br>
+                </div>
+
+                <div class="tureFormaInputRow">
+                    <label for="duzina">Dužina: </label>
+                    <input type="number" id="duzina" name="duzina" required>
+                    <br>
+                </div>
+
+                <div class="tureFormaInputRow">
+                    <label for="tagovi">Tagovi: </label>
+                    <input type="text" id="tagovi" name="tagovi" required>
+                    <br>
+                </div>
+      
+                <div class="tureFormaSubmitRow">
+                    <input type="submit" id="tureFormaBtn" name="tureFormaBtn" value="Dodaj">
+                    <br>
+                </div>
+                
+                <br>
+            </form>
+        </div>
+
+        <div class="tureDetailsDiv">
+            <p>test</p>
+        </div>
+    </div>
+
+ 
     <section class="site-description">
         <h2>Dobrodošli na TourApp!</h2>
         <p>Naša platforma omogućava jednostavno pretragu tura i restorana na raznim lokacijama.</p>
     </section>
+    <script src="main.js"></script>
 </body>
 </html>
