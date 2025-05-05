@@ -59,10 +59,6 @@ function displayTureDetails(tura) {
 }
 
 
-
-
-
-
 let ture = []
 
 function updateLocalStorage() {
