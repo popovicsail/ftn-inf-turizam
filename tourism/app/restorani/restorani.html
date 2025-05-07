@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="../../dist/styles.css"> -->
+    <link rel="stylesheet" href="../../dist/restorani/restorani.css">
+</head>
+
+<body>
+    <h1>Restorani</h1>
+
+    <div class="kontejner">
+        <table id="prikazSvihRestorana">
+            <thead>
+                <tr>
+                    <th id="kolonaNaziv">Naziv</th>
+                    <th id="kolonaKuhinja">Kuhinja</th>
+                </tr>
+            </thead>
+            <tbody id="bodyPrveTabele">
+
+            </tbody>
+        </table>
+
+        <form id="forma">
+            <div>
+                <label for="naziv">Naziv: </label>
+                <input type="text" name="naziv" id="naziv" required>
+                <br>
+            </div>
+            <div>
+                <label for="opis">Opis: </label>
+                <input type="text" name="opis" id="opis" required>
+                <br>
+            </div>
+
+            <div>
+                <label for="tip">Tip: </label>
+                <input type="text" name="tip" id="tip">
+                <br>
+            </div>
+
+            <div>
+                <label for="kuhinja">Kuhinja: </label>
+
+                <div id="kuhinjaLista">
+
+                </div>
+                <br>
+                <button id="btnDodajIzListe">+</button>
+            </div>
+
+
+
+            <button id="btn" type="button">Dodaj restoran</button>
+        </form>
+    </div>
+
+
+
+    <div id="detaljiPrveTabele"></div>
+
+
+    <br>
+    <script src="restorani.js"></script>
+</body>
+
+</html>

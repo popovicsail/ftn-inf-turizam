@@ -10,7 +10,7 @@ class Tura {
 }
 
 
-function initializeTuraTable() {  
+function initializeTuraTable() {
     let tureTbody = document.querySelector("#tureTbody")
     tureTbody.innerHTML = ""
 
@@ -26,11 +26,11 @@ function initializeTuraTable() {
         tr.appendChild(naziv)
         tr.appendChild(opis)
 
-        tr.addEventListener("click", function() {
+        tr.addEventListener("click", function () {
             displayTureDetails(ture[i])
             document.querySelector(".tureDetailsDiv").style.display = "flex"
         })
-        
+
         tureTbody.appendChild(tr)
     }
 }
@@ -73,14 +73,14 @@ function loadLocalStorage() {
 
 
 function loadEvents() {
-    document.querySelector("#tureBtn").addEventListener("click", function(event) {
+    document.querySelector("#tureBtn").addEventListener("click", function (event) {
         event.preventDefault()
         initializeTuraTable()
         document.querySelector(".tureTableDiv").style.display = "flex"
         document.querySelector(".tureFormaDiv").style.display = "flex"
     })
 
-    document.querySelector("#tureFormaBtn").addEventListener("click", function(event) {
+    document.querySelector("#tureFormaBtn").addEventListener("click", function (event) {
         event.preventDefault()
         let forma = document.querySelector(".tureForma")
         let formData = new FormData(forma)
@@ -100,7 +100,7 @@ function loadEvents() {
 
 
 function initializePage() {
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function () {
         loadEvents()
         loadLocalStorage()
     })

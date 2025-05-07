@@ -1,0 +1,54 @@
+$background-color-gray: #f3f3f3;
+$border: 1px solid black;
+$padding-size: 10px;
+
+
+.kontejner {
+    display: flex;
+
+    table {
+        border: $border;
+        border-collapse: collapse;
+        width: 50%;
+
+        th,td {
+            border: $border;
+            padding: $padding-size;
+            text-align: center;
+        }
+
+        th {
+            background-color: $background-color-gray;
+        }
+    }
+
+    form {
+        border: $border;
+        margin-left: 20px;
+        padding: $padding-size;
+
+        div{
+            margin:10px;
+        }
+    }
+}
+
+
+table th:nth-child(1),
+table td:nth-child(1) {
+    width:30%;
+}
+
+table th:nth-child(2),
+table td:nth-child(2) {
+    width: 70%;
+}
+
+#detaljiPrveTabele{
+    width: 20%;
+    margin-top: 30px;
+
+    p{border: $border;
+        padding: $padding-size;}
+}
+
