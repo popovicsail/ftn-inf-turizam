@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar .title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.navbar .nav-links li {
+  margin: 0;
+}
+.navbar .nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+.navbar .nav-links a:hover {
+  color: #4c9ab4;
+}
+
+.site-description {
+  margin-top: 40px;
+  text-align: center;
+}
+.site-description h2 {
+  font-size: 32px;
+  color: #333;
+}
+.site-description p {
+  font-size: 18px;
+  color: #555;
+  margin-top: 10px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+div.tureAllDiv {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+div.tureAllDiv div.tureTableDiv {
+  display: none;
+  width: 40%;
+  margin: 2%;
+  border: 2px solid #000000;
+}
+div.tureAllDiv div.tureTableDiv table {
+  border-collapse: collapse;
+  width: 100%;
+}
+div.tureAllDiv div.tureTableDiv table tr {
+  width: 100%;
+}
+div.tureAllDiv div.tureTableDiv table tr th, div.tureAllDiv div.tureTableDiv table tr td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+  height: 40px;
+}
+div.tureAllDiv div.tureTableDiv table tr th {
+  background-color: #f4f4f9;
+}
+div.tureAllDiv div.tureTableDiv table tr th#tureTableNaziv {
+  width: 40%;
+}
+div.tureAllDiv div.tureTableDiv table tr th#tureTableOpis {
+  width: 60%;
+}
+div.tureAllDiv div.tureFormaDiv {
+  display: none;
+  width: 40%;
+  margin: 2%;
+  border: 2px solid #000000;
+}
+div.tureAllDiv div.tureFormaDiv form.tureForma {
+  flex-direction: column;
+  height: 50%;
+}
+div.tureAllDiv div.tureFormaDiv form.tureForma div.tureFormaInputRow {
+  display: flex;
+  padding: 10px;
+}
+div.tureAllDiv div.tureFormaDiv form.tureForma div.tureFormaInputRow input {
+  border: none;
+  border-bottom: 1px solid #000000;
+}
+div.tureAllDiv div.tureFormaDiv form.tureForma div.tureFormaSubmitRow {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+div.tureAllDiv div.tureFormaDiv form.tureForma div.tureFormaSubmitRow input {
+  padding: 5px;
+}
+div.tureAllDiv div.tureDetailsDiv {
+  display: none;
+  width: 40%;
+  margin: 2%;
+  border: 2px solid #000000;
+  flex-direction: column;
+}
+div.tureAllDiv div.tureDetailsDiv p {
+  margin: 5px;
+}
+
+/*# sourceMappingURL=tour.css.map */

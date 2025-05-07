@@ -1,0 +1,169 @@
+$primary-color: #333;
+$secondary-color: #fff;
+$accent-color: #4c9ab4;
+$background-color: #f4f4f9;
+$text-color: #333;
+$description-text: #555;
+$box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: $text-color;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $primary-color;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: $box-shadow;
+
+    .title {
+        color: $secondary-color;
+        font-size: 24px;
+        font-weight: bold;
+        margin-left: 20px;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+
+        li {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: $secondary-color;
+            font-size: 18px;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: $accent-color;
+            }
+        }
+    }
+}
+
+.site-description {
+    margin-top: 40px;
+    text-align: center;
+
+    h2 {
+        font-size: 32px;
+        color: $text-color;
+    }
+
+    p {
+        font-size: 18px;
+        color: $description-text;
+        margin-top: 10px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.6;
+    }
+}
+
+
+div.tureAllDiv {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+
+    div.tureTableDiv {
+        display: none;
+        width: 40%;
+        margin: 2%;
+        border: 2px solid #000000;
+    
+        table { 
+            border-collapse: collapse;
+            width: 100%;
+    
+            tr {
+                width: 100%;
+
+                th, td {
+                    padding: 10px;
+                    border: 1px solid #ddd;
+                    text-align: left;
+                    height: 40px;
+                }
+
+                th {
+                    background-color: $background-color
+                }
+
+                th#tureTableNaziv {
+                    width: 40%;
+                }
+
+                th#tureTableOpis {
+                    width: 60%;
+                }
+            }
+        }
+    }
+    
+    div.tureFormaDiv {
+        display: none;
+        width: 40%;
+        margin: 2%;
+        border: 2px solid #000000;
+
+
+        form.tureForma { 
+            flex-direction: column;
+            height: 50%;
+            
+            div.tureFormaInputRow {
+                display: flex;
+                padding: 10px;
+
+                input {
+                    border: none;
+                    border-bottom: 1px solid #000000;
+                }         
+            }
+
+            div.tureFormaSubmitRow {
+                display: flex;
+                justify-content: flex-end;
+                padding: 10px;
+                
+
+                input {
+                    padding: 5px;
+                }
+            }
+
+        }
+    }
+
+    div.tureDetailsDiv {
+        display: none;
+        width: 40%;
+        margin: 2%;
+        border: 2px solid #000000;
+        flex-direction: column;
+
+        p {
+            margin: 5px;
+        }
+    }
+}
+
+
+
