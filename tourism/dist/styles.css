@@ -98,10 +98,10 @@ div.tureAllDiv div.tureFormaDiv {
   display: none;
   width: 40%;
   margin: 2%;
+  border: 2px solid #000000;
 }
 div.tureAllDiv div.tureFormaDiv form.tureForma {
   flex-direction: column;
-  border: 2px solid #000000;
   height: 50%;
 }
 div.tureAllDiv div.tureFormaDiv form.tureForma div.tureFormaInputRow {
